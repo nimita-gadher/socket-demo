@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 
 // Socket.io logic
 io.on('connection', (socket) => {
-  console.log('Socket connection successful:', socket.id);
+  console.log('Socket connection successful :', socket.id);
 
   // Send a welcome message to the client
   socket.emit('message', 'Welcome to the socket connection!');
