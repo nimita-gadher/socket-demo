@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Socket.io Example</title>
+</head>
+<body>
+  <h1>Socket.io Example</h1>
+  <p id="message"></p>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+
+    socket.on('message', (data) => {
+      document.getElementById('message').textContent = data;
+    });
+  </script>
+</body>
+</html>
